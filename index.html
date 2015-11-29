@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dBug</title> <!-- Title of the Website -->
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap CSS -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Jquery -->
+		<script type="text/javascript" src="js/parallax.min.js"></script> <!--Parallex scroll js-->
+		<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script> <!--To top buttton-->
+		
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+		queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></
+		script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/
+		respond.min.js"></script>
+		<![endif]-->
+		
+		
+		
+		<style> <!-- CSS section of the code -->
+			.parallax-container {
+			height: 500px;
+			width: 100%;
+			}
+			
+			.parallax-window {
+			min-height: 400px;
+			background: transparent;
+			width:100%;
+			}
+			
+			.navbar-brand{
+				font-size:1.8em;
+			}
+			
+			#scrollUp {
+			bottom: 20px;
+			right: 20px;
+			padding: 10px 20px;
+			background: #555;
+			color: #2E9AFE;
+			}
+			
+			#containerTop {
+				background-image: url("images/header-blue.jpg"); <!--  background image on top of page-->
+				padding: 300px 0;
+				width:100%;
+				background-size:cover;
+				background-attachment: fixed;
+			}
+			
+			#topRow{ 
+				margin-top: 250px;
+				text-align:center;
+				color:#FAFAFA;
+			}
+			
+			#topRow h1{ 
+				font-size:350%;
+				color:#FAFAFA;
+			}
+			
+			#map {
+				height: 100%;
+			}
+
+			
+			.paddingTop{ 
+				margin-top:30px;
+			}
+			
+			.centered{ 
+				text-align:center;
+			}
+			
+			.title{
+				margin-top:30px;
+				font-size:300%;
+			}
+			
+			.paddingiframe{ 
+				margin-top:30px;
+				margin-bottom:40px;
+			}
+			
+			
+			.footer{
+				background-color:#C7E0F9;
+				margin-top:40px;
+				border-top-right-radius: 1em;
+				border-top-left-radius: 1em;
+			}
+			
+			.footertext{
+				font-size:150%;
+				text-align:center;
+				margin-top:30px;
+				
+			}
+			
+			.logo{
+				marjin-top:10px;
+				margin-bottom:10px;
+			}
+		
+		</style>
+		
+	</head>
+	<body>
+	
+	<div class="navbar navbar-default navbar-fixed-top"> <!-- navbar made static-->
+	  <div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span> <!--span for buttons on banner -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
+			<div class="logo">
+			<a class="navbar-brand"> <img src="images/logo1_trans.png" width="80" /></a>
+			</div>
+		</div>
+		
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#home">Home</a></li> <!-- Home button set to default -->
+				<li> <a href="#blog">Blog</a></li> <!-- Blog button  -->
+				<li> <a href="#calender">Calendar</a></li> <!-- Calendar button -->
+				<li> <a href="test.html">Documents</a></li> <!-- Documents button -->
+				<li> <a href="#contact">Contact Us</a></li> <!-- Contact Us button  -->
+			</ul>
+			
+		
+		
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container" id="containerTop">
+	    
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3" id="topRow"> <!--center the text in the middle of the container -->
+				<h1> Disease Bug </h1>
+				<p class="lead paddingTop"> Find the Bugs Near You </p>
+				
+				<form>
+					<input type="button" value="Report" class="btn btn-info btn-lg paddingTop" 
+					onClick="document.getElementById('#info').scrollIntoView();"/>
+				</form>
+			
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	<div  class="container paddingiframe">
+		<div class="row" class="centered">
+			<h1 class="centered title"> dBug at a Glance </h1>
+			
+			<p class="centered"> Every year, there is a seasonal outbreak of seasonal illnesses like the flu. 
+				Flu season is an annually recurring time period characterized by the prevalence of outbreaks of influenza (flu). 
+				The season occurs during the cold half of the year in each hemisphere. Influenza activity can sometimes be predicted and even tracked geographically. 
+				While the beginning of major flu activity in each season varies by location, in any specific location these minor epidemics 
+				usually take about 3 weeks to peak and another 3 weeks to significantly diminish.
+				
+			</p>
+			<p class="centered"> 
+				The dBug project involves using an app that allows users affected by the seasonal flu to report their 
+				illness, simply through a click of a button. The app collects anonymous location data which is stored in a database.
+				Using at data and google APIs, the website generates a live perspective of the progression of the flu in the locality.
+				
+			</p>
+			
+			<div class="centered paddingiframe">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/fKRLHtO4PSE" frameborder="0" allowfullscreen></iframe>
+			</div>
+		
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-md-4 centered">
+			<h2><span class="glyphicon glyphicon-calendar"></span> Calender</h2>
+			<p>
+				A calender of everts showing past and upcoming events.
+				Stay tuned for updates!
+			</p>
+			
+			<button class="btn btn-success marginTop"> Click</button>
+			
+		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 centered">
+			<h2><span class="glyphicon glyphicon-list-alt"></span> Blog</h2>
+			<p>
+				Visit our blog! Participate in discussions about various topics 
+				and interact with other users. 
+			</p>
+			
+			<button class="btn btn-success marginTop"> Click</button>
+			
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 centered">
+			<h2><span class="glyphicon glyphicon-file"></span> Files</h2>
+			<p>
+				Files are available for viewing and download in the documents section. 
+			</p>
+			
+			<button class="btn btn-success marginTop"> Click</button>
+			
+		</div>
+		
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="#info">
+	
+	<div id="map" style="width: 100%; height: 400px;"></div>
+	</div>
+	
+	<div class="parallax-window" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/back_neu.jpg" data-natural-width="1400" data-natural-height="900"></div>
+	
+	<div id="#info" class="container paddingiframe">
+		<div class="row" class="centered">
+			
+			<img src= "images/app_disp.png"/ style="width:100%">
+			
+			
+		</div>
+		
+
+		
+
+		
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="container footer">
+	<p class="footertext"> &copy 2015 dBug - Brown+1  <p>
+	
+	</div>
+
+	
+	
+		<!--jQuery is necessary for bootstrap's JavaScript plugins -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	
+		<script> 
+			$("#containerTop").css("min-height",$(window).height());
+		</script>
+		
+		<script type="text/javascript">
+		
+		var locations = [
+      ['Test 1', 42.999244, -81.278337, 4],
+      ['Test 2', 42.998744, -81.288337, 5],
+      ['Test 3', 42.998244, -81.268337, 3],
+      ['Test 4', 42.988244, -81.275337, 2],
+      ['Test 5', 42.969244, -81.279337, 1]
+	];
+		
+		var map;
+		function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+		center: new google.maps.LatLng(42.999244, -81.278337),
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		zoom: 14
+		
+			});
+			var myLatLng = {lat: 42.999244, lng: -81.278337};
+		 var marker = new google.maps.Marker({
+		 position: myLatLng,
+		 map: map,
+		 title: 'Hello World!'
+		  })
+		  
+		}
+		 var infowindow = new google.maps.InfoWindow();
+		 
+		 
+
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+		</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAwvo8LkyP1cNBFUSXqs8uNvGydTO08RNg &callback=initMap"
+        async defer></script>
+
+	
+	
+	<script>
+	
+		$(function () {
+		$.scrollUp({
+		scrollName: 'scrollUp', // Element ID
+		topDistance: '300', // Distance from top before showing element (px)
+		topSpeed: 300, // Speed back to top (ms)
+		animation: 'fade', // Fade, slide, none
+		animationInSpeed: 200, // Animation in speed (ms)
+		animationOutSpeed: 200, // Animation out speed (ms)
+		scrollText: 'Scroll to top', // Text for element
+		activeOverlay: #00FFFF, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+		});
+	});
+	
+	</script>
+	
+	
+	</body>
+</html>
